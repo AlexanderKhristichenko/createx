@@ -1,6 +1,7 @@
 import fileinclude from "gulp-file-include";
 import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
+import htmlmin from "gulp-htmlmin";
 
 export const html = () => {
   return app.gulp
@@ -10,8 +11,8 @@ export const html = () => {
         app.plugins.notify.onError({
           title: "HTML",
           message: "Error <%= error.message %>",
-        })
-      )
+        }),
+      ),
     )
     .pipe(fileinclude())
     .pipe(app.plugins.replace(/@img\//g, "img/"))
@@ -27,7 +28,13 @@ export const html = () => {
         output: {
           file: "gulp/version.json",
         },
-      })
+      }),
+    )
+    .pipe(
+      htmlmin({
+        collapseWhitespace: false,
+        removeComments: true,
+      }),
     )
     .pipe(app.gulp.dest(app.path.build.html))
     .pipe(app.plugins.browserSync.stream());

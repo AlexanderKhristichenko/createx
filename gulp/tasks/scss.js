@@ -16,35 +16,36 @@ export const scss = () => {
         app.plugins.notify.onError({
           title: "SCSS",
           message: "Error <%= error.message %>",
-        })
-      )
+        }),
+      ),
     )
-    .pipe(app.plugins.replace(/@img\//g, "../img/"))
+
     .pipe(
       sass({
         outputStyle: "expanded",
-      })
+      }),
     )
     .pipe(groupCssMediaQueries())
     .pipe(
       webpcss({
         webpClass: ".webp",
         noWebpClass: ".no-webp",
-      })
+      }),
     )
     .pipe(
       autoprefixer({
         grid: true,
         overrideBrowserslist: ["last 3 versions"],
         cascade: true,
-      })
+      }),
     )
     .pipe(cleanCss())
     .pipe(
       rename({
         extname: ".min.css",
-      })
+      }),
     )
+    .pipe(app.plugins.replace(/@img\//g, "../img/"))
     .pipe(app.gulp.dest(app.path.build.css, { sourcemaps: app.isDev }))
     .pipe(app.plugins.browserSync.stream());
 };
