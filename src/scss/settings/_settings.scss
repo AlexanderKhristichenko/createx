@@ -2,6 +2,8 @@
 $container: 78.75rem;
 $font_family1: 'Ubuntu';
 $font_family2: 'Lato';
+$color_gray-800: #424551;
+$color_gray-900: #1E212C;
 // * Variables End * \\
 
 // * Mixins Start * \\
@@ -66,26 +68,3 @@ $font_family2: 'Lato';
 }
 
 // Breakpoint End \\
-
-// Absolute Position Start \\
-@mixin abs-position($top, $left, $bottom, $right) {
-  position: absolute;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
-}
-
-// Absolute Position End \\
-// * Mixins End * \\
-
-// * Extends Start * \\
-%flex {
-  display: flex;
-}
-
-%grid {
-  display: grid;
-}
-
-// * Extends End * \\
