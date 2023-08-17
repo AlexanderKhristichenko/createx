@@ -1,0 +1,20 @@
+.btn {
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.25rem;
+  letter-spacing: .0313rem;
+  text-transform: uppercase;
+  color: $color_white;
+  background-color: $color_primary;
+  border: .0625rem solid $color_primary;
+  padding: 0 2.4375rem;
+  border-radius: .25rem;
+  cursor: pointer;
+
+  &--transparent {
+    background-color: transparent;
+    border-color: $color_white;
+  }
+}

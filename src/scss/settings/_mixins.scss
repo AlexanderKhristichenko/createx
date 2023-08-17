@@ -1,0 +1,61 @@
+// Font Start \\
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+    url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+// Font End \\
+
+// Response Start \\
+@mixin response($flex, $min-width, $max-width) {
+  @if $flex {
+    flex: 1 1 math.div($min-width, $max-width) * 100%;
+  }
+
+  @else {
+    width: math.div($min-width, $max-width) * 100%;
+  }
+}
+
+// Response End \\
+
+// Breakpoint Start \\
+@mixin breakpoint($point) {
+  @if $point ==_1400 {
+    @media (max-width: 87.5em) {
+      @content;
+    }
+  }
+
+  @else if $point ==_1200 {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @else if $point ==_992 {
+    @media (max-width: 62em) {
+      @content;
+    }
+  }
+
+  @else if $point ==_768 {
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @else if $point ==_576 {
+    @media (max-width: 36em) {
+      @content;
+    }
+  }
+}
+
+// Breakpoint End \\
