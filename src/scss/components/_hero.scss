@@ -1,10 +1,10 @@
 .hero {
-  height: 100vh;
+  height: 102.6vh;
   background-image: url('@img/bg/hero-bg-image.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  padding-bottom: 84px;
+  padding-bottom: 6.8125rem;
 
   &__slider {
     width: 100%;
@@ -17,17 +17,17 @@
   }
 
   &__container {
-    max-width: 577px;
+    max-width: 36.0625rem;
   }
 
   &__title {
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 130%;
-    letter-spacing: 1px;
+    letter-spacing: .0625rem;
     text-transform: uppercase;
     color: $color_white;
-    margin-top: -24px;
+    margin-top: -1.5rem;
 
     span {
       color: $color_primary;
@@ -35,18 +35,18 @@
   }
 
   &__txt {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 150%;
     color: $color_white;
-    margin-top: 24px;
+    margin-top: 1.5rem;
   }
 
   &__btn-group {
     display: flex;
     align-items: center;
-    column-gap: 22px;
-    margin-top: 61px;
+    column-gap: 1.375rem;
+    margin-top: 3.8125rem;
   }
 
   &__pagination-container {
@@ -56,12 +56,12 @@
   &__pagination {
     counter-reset: count;
     text-align: left;
-    left: 11px !important;
+    left: .6875rem !important;
   }
 
   &__btn-next {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: $color_white;
     top: 56%;
@@ -72,14 +72,14 @@
       display: block;
       background-image: url('@img/icons/slider-arrow.svg');
       background-repeat: no-repeat;
-      width: 18px;
-      height: 11px;
+      width: 1.125rem;
+      height: .6875rem;
     }
   }
 
   &__btn-prev {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: $color_white;
     top: 56%;
@@ -91,8 +91,8 @@
       background-image: url('@img/icons/slider-arrow.svg');
       background-repeat: no-repeat;
       transform: rotate(180deg);
-      width: 18px;
-      height: 11px;
+      width: 1.125rem;
+      height: .6875rem;
     }
   }
 }
@@ -100,11 +100,11 @@
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 0;
-  width: 178px;
-  height: 2px;
+  width: 11.125rem;
+  height: .125rem;
   position: relative;
-  margin-left: 2px !important;
-  margin-left: 2px !important;
+  margin-left: .125rem !important;
+  margin-left: .125rem !important;
 
   &-active {
     background-color: $color_white;
@@ -113,12 +113,12 @@
   &::before {
     counter-increment: count;
     content: '0' counter(count);
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
     color: $color_white;
     line-height: 150%;
     position: absolute;
-    top: -52px;
+    top: -3.25rem;
     left: 0;
   }
 }
