@@ -1,0 +1,12 @@
+.video {
+  padding-top: 7.5rem;
+  padding-bottom: calc(180 / 2) + px;
+
+  &__container {
+    margin-top: 60px;
+  }
+
+  &__preolader {
+    cursor: pointer;
+  }
+}
