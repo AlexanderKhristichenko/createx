@@ -1,0 +1,37 @@
+.values {
+  padding-top: 5.625rem;
+  padding-bottom: 5.25rem;
+
+  &__container {
+    margin-top: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 17.8125rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: $color_gray-900;
+  }
+
+  &__txt {
+    font-weight: 400;
+    line-height: 160%;
+    color: $color_gray-700;
+    text-align: center;
+    margin-top: .5rem;
+  }
+
+  &__divider {
+    width: 1px;
+    min-height: 11.75rem;
+    background: linear-gradient(315deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+  }
+}
