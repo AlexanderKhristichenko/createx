@@ -1,0 +1,14 @@
+.learn-more {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 150%;
+    color: $color_gray-900;
+  }
+}
