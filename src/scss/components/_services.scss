@@ -1,0 +1,36 @@
+.services {
+  position: relative;
+  background-image: url('@img/bg/services-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 880px;
+  padding-top: 210px;
+  top: -90px;
+  z-index: 1;
+
+  &__container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    width: 285px;
+    min-height: 285px;
+    background-color: $color_white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    color: $color_gray-900;
+  }
+}

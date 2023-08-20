@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Font Start \\
 @mixin font($font_name, $file_name, $weight, $style) {
   @font-face {

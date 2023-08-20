@@ -1,6 +1,7 @@
 @import "settings/settings";
 @import "components/title";
 @import "components/btn";
+@import "components/learn-more";
 
 .container {
   max-width: $container;
@@ -13,3 +14,5 @@
 @import "components/hero";
 @import "components/video";
 @import "components/values";
+@import "components/request";
+@import "components/services";
