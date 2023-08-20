@@ -27,6 +27,11 @@
     font-weight: 700;
     line-height: 160%;
     color: $color_gray-800;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color_primary;
+    }
   }
 }
 
@@ -36,6 +41,11 @@
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 3.25rem;
+
+
+  &:hover &__value {
+    color: $color_primary;
+  }
 
   &__caption {
     font-size: .875rem;
@@ -49,6 +59,7 @@
     font-weight: 400;
     line-height: 150%;
     color: $color_gray-900;
+    transition: color 0.3s;
   }
 
   &--phone {

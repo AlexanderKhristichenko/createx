@@ -12,9 +12,19 @@
   border-radius: .25rem;
   cursor: pointer;
   display: inline-block;
+  transition: all .3s;
+
+  &:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+  }
 
   &--transparent {
     background-color: transparent;
     border-color: $color_white;
+
+    &:hover {
+      border-color: transparent;
+      background-color: $color_primary;
+    }
   }
 }
