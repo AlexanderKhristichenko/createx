@@ -1,0 +1,123 @@
+.portfolio-slider {
+  padding-top: 1.875rem;
+
+  .title {
+    max-width: 44.0625rem;
+  }
+
+  &__slider {
+    margin-top: 3.75rem;
+    overflow-y: visible;
+  }
+
+  &__slide {
+    overflow: hidden;
+    max-height: 26.25rem;
+
+    &:hover .portfolio-slider__body {
+      transform: translateY(-4.3125rem);
+    }
+  }
+
+  &__img {
+    border-radius: .25rem .25rem 0 0;
+  }
+
+  &__body {
+    background-color: $color_white;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 150%;
+    color: $color_gray-900;
+  }
+
+  &__subtitle {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: $color_gray-700;
+    margin-top: .25rem;
+  }
+
+  &__btn {
+    padding: 0 2rem;
+    color: $color_primary;
+    border-color: $color_primary;
+    font-size: .875rem;
+    margin-top: 1.5rem;
+    line-height: 2.75rem;
+    letter-spacing: .0313rem;
+
+    &:hover {
+      color: $color_white;
+    }
+  }
+
+  &__btn-next {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $color_white;
+    transition: 0.3s;
+    top: -4.6875rem;
+    right: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('@img/icons/slider-arrow.svg');
+      background-repeat: no-repeat;
+      width: 1.125rem;
+      height: .6875rem;
+    }
+
+    &:hover {
+      background-color: $color_primary;
+    }
+
+    &:hover::after {
+      background-image: url('@img/icons/slider-arrow-white.svg');
+    }
+  }
+
+  &__btn-prev {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $color_white;
+    transition: 0.3s;
+    top: -4.6875rem;
+    left: 90%;
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('@img/icons/slider-arrow.svg');
+      background-repeat: no-repeat;
+      transform: rotate(180deg);
+      width: 1.125rem;
+      height: .6875rem;
+    }
+
+    &:hover {
+      background-color: $color_primary;
+    }
+
+    &:hover::after {
+      background-image: url('@img/icons/slider-arrow-white.svg');
+    }
+  }
+
+  &__more {
+    margin-top: 6.1875rem;
+  }
+}
