@@ -1,0 +1,108 @@
+.testimonials {
+  padding-top: 7.5rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__content {
+    max-width: 37.5rem;
+    position: relative;
+    bottom: -3.75rem;
+  }
+
+  &__slider {
+    margin-top: 3.75rem;
+  }
+
+  &__user-photo {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  &__txt {
+    margin-top: 1.5rem;
+    font-weight: 400;
+    line-height: 160%;
+    color: $color_gray-800;
+  }
+
+  &__user-name {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    line-height: 160%;
+    color: $color_gray-900;
+  }
+
+  &__user-job-title {
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: $color_gray-700;
+    margin-top: .4375rem;
+  }
+
+  &__btn-next {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    bottom: 0;
+    top: auto;
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('@img/icons/slider-arrow.svg');
+      background-repeat: no-repeat;
+      width: 1.125rem;
+      height: .6875rem;
+    }
+
+    &:hover {
+      background-color: $color_primary;
+    }
+
+    &:hover::after {
+      background-image: url('@img/icons/slider-arrow-white.svg');
+    }
+  }
+
+  &__btn-prev {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    bottom: 0;
+    top: auto;
+    left: auto;
+    right: 4.375rem;
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('@img/icons/slider-arrow.svg');
+      background-repeat: no-repeat;
+      transform: rotate(180deg);
+      width: 1.125rem;
+      height: .6875rem;
+    }
+
+    &:hover {
+      background-color: $color_primary;
+    }
+
+    &:hover::after {
+      background-image: url('@img/icons/slider-arrow-white.svg');
+    }
+  }
+
+  &__img {
+    max-width: 30.9375rem;
+    position: relative;
+    bottom: -3.75rem;
+  }
+}

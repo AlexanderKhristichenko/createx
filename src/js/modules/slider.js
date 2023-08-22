@@ -28,3 +28,14 @@ export const portfolioSlider = () => {
     },
   });
 };
+
+export const testimonialsSlider = () => {
+  const swiper = new Swiper(".testimonials__slider", {
+    modules: [Navigation],
+    loop: true,
+    navigation: {
+      nextEl: ".testimonials__btn-next",
+      prevEl: ".testimonials__btn-prev",
+    },
+  });
+};
