@@ -1,2 +1,3 @@
-# Createx - Multipage website
-## PerfectPixel
+# Createx - Multipage website (PerfectPixel)
+
+![Preview](./preview.jpg)
