@@ -10,6 +10,12 @@
   padding: 0 0.9375rem;
 }
 
+.wrapper {
+  &--gray {
+    background-color: $color_gray-200
+  }
+}
+
 @import "components/header";
 @import "components/hero";
 @import "components/video";
@@ -17,3 +23,5 @@
 @import "components/request";
 @import "components/services";
 @import "components/portfolio-slider";
+@import "components/partners";
+@import "components/testimonials";
