@@ -1,0 +1,132 @@
+.footer {
+  background-color: $color_gray-900;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  &__head-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__head {
+    max-width: 30.8125rem;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 3.75rem;
+  }
+
+  &__social-list {
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  &__social-link {
+    &:hover .footer__social-icon {
+      fill: $color_primary;
+    }
+  }
+
+  &__social-icon {
+    transition: .3s;
+  }
+
+  &__desc {
+    margin-top: 1.5rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgba($color: $color_white, $alpha: 0.6);
+  }
+
+  &__subscribe-container {
+    max-width: 30.9375rem;
+  }
+
+  &__subscribe-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 150%;
+    color: $color_white;
+  }
+
+  &__form {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    padding: .75rem 1rem;
+    border-radius: .25rem;
+    border: .0625rem solid rgba($color: $color_white, $alpha: 0.2);
+    background: rgba($color: $color_white, $alpha: 0.12);
+    color: rgba($color: $color_white, $alpha: 0.6);
+    border-radius: .25rem 0 0 .25rem;
+  }
+
+  &__btn {
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: .0313rem;
+    border-radius: 0 .25rem .25rem 0;
+  }
+
+  &__body-content {
+    margin-top: 3.125rem;
+    display: flex;
+    column-gap: 7.8125rem;
+  }
+
+  &__nav-title {
+    color: $color_white;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: .0625rem;
+  }
+
+  &__nav-list {
+    margin-top: .8125rem;
+  }
+
+  &__nav-link {
+    font-weight: 400;
+    line-height: 160%;
+    color: rgba($color: $color_white, $alpha: 0.6);
+    transition: color .3s;
+
+    &:hover {
+      color: $color_primary;
+    }
+
+    span {
+      color: $color_white;
+    }
+  }
+
+  &__footer-content {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $color_primary;
+    border-radius: .25rem;
+  }
+}
+
+.copyright {
+  color: $color_white;
+}

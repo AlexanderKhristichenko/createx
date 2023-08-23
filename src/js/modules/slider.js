@@ -4,7 +4,6 @@ import { Navigation, Pagination } from "swiper/modules";
 export const heroSlider = () => {
   const swiper = new Swiper(".hero__slider", {
     modules: [Navigation, Pagination],
-    // loop: true,
     pagination: {
       el: ".hero__pagination",
       clickable: true,

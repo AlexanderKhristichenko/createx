@@ -32,7 +32,7 @@ export const html = () => {
     )
     .pipe(
       htmlmin({
-        collapseWhitespace: false,
+        collapseWhitespace: true,
         removeComments: true,
       }),
     )
