@@ -14,6 +14,12 @@
   &--gray {
     background-color: $color_gray-200
   }
+
+  &--main-bg {
+    background-image: url('@img/bg/bg-main-image.png');
+    background-repeat: no-repeat;
+    background-position: 0 -417px;
+  }
 }
 
 @import "components/header";
@@ -25,3 +31,6 @@
 @import "components/portfolio-slider";
 @import "components/partners";
 @import "components/testimonials";
+@import "components/facts";
+@import "components/recent-news";
+@import "components/discuss";
