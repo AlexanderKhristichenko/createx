@@ -1,0 +1,70 @@
+.discuss {
+  margin-top: 7.5rem;
+  padding: 5rem 0;
+  background-image: url('@img/bg/discuss-bg.jpg');
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    border-radius: .25rem;
+    max-width: 30.9375rem;
+    padding: 3rem 2.5rem;
+    background-color: $color_white;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+  }
+
+  &__form {
+    margin-top: 1.5rem;
+    display: grid;
+    row-gap: 1.25rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+  }
+
+  &__label {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: $color_gray-800;
+  }
+
+  &__input {
+    padding: .75rem 1rem;
+    background-color: $color_gray-200;
+    border: .0625rem solid $color_gray-400;
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: $color_gray-600;
+    border-radius: .25rem;
+  }
+
+  &__textarea {
+    padding: .75rem 1rem;
+    background-color: $color_gray-200;
+    border: .0625rem solid $color_gray-400;
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: $color_gray-600;
+    border-radius: .25rem;
+    resize: none;
+  }
+
+  &__checked {
+    display: flex;
+    column-gap: .75rem;
+  }
+}
