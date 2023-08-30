@@ -18,12 +18,17 @@ export const heroSlider = () => {
 export const portfolioSlider = () => {
   const swiper = new Swiper(".portfolio-slider__slider", {
     modules: [Navigation],
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     navigation: {
       nextEl: ".portfolio-slider__btn-next",
       prevEl: ".portfolio-slider__btn-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
     },
   });
 };

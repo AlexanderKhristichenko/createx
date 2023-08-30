@@ -1,6 +1,11 @@
 .video {
-  padding-top: 7.5rem;
-  padding-bottom: 5.625rem;
+  padding-top: 120px;
+  padding-bottom: 90px;
+
+  @include breakpoint(_576) {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
 
   &__container {
     margin-top: 3.75rem;
@@ -8,5 +13,9 @@
 
   &__preolader {
     cursor: pointer;
+
+    @include breakpoint(_1200) {
+      height: auto;
+    }
   }
 }

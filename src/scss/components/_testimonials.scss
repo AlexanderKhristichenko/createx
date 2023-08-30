@@ -1,16 +1,29 @@
 .testimonials {
   padding-top: 7.5rem;
 
+  @include breakpoint(_1200) {
+    padding-bottom: 50px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include breakpoint(_1200) {
+      justify-content: center;
+    }
   }
 
   &__content {
     max-width: 37.5rem;
     position: relative;
     bottom: -3.75rem;
+
+    @include breakpoint(_1200) {
+      bottom: 0;
+      max-width: 100%;
+    }
   }
 
   &__slider {
@@ -104,5 +117,9 @@
     max-width: 30.9375rem;
     position: relative;
     bottom: -3.75rem;
+
+    @include breakpoint(_1200) {
+      display: none;
+    }
   }
 }

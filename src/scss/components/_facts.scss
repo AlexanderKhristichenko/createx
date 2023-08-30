@@ -1,11 +1,17 @@
 .facts {
   padding-top: 11.25rem;
 
+  @include breakpoint(_768) {
+    padding-top: 50px;
+  }
+
   &__container {
     margin-top: 3.75rem;
     display: flex;
     justify-content: center;
     column-gap: 3rem;
+    flex-wrap: wrap;
+    row-gap: 30px;
   }
 
   &__circle-item {

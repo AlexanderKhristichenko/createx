@@ -4,9 +4,18 @@
 
   &__content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 3.75rem;
     column-gap: 6.375rem;
+    row-gap: 1.875rem;
+
+    @include breakpoint(_768) {
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    flex: 0 1 100px
   }
 }

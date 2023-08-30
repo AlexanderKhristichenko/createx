@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: $color_white;
   padding-top: 1.4375rem;
   padding-bottom: 1.3125rem;
@@ -12,6 +13,10 @@
   &__contacts {
     display: flex;
     column-gap: 2.25rem;
+
+    @include breakpoint(_1200) {
+      display: none;
+    }
   }
 }
 
@@ -21,6 +26,18 @@
   &__list {
     display: flex;
     column-gap: 2.5rem;
+
+    @include breakpoint(_992) {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.875rem;
+    }
+
+    @media (max-height: 500px) {
+      justify-content: flex-start;
+    }
   }
 
   &__link {
@@ -31,6 +48,34 @@
 
     &:hover {
       color: $color_primary;
+    }
+
+    @include breakpoint(_992) {
+      font-size: 30px;
+    }
+  }
+
+  @include breakpoint(_992) {
+    height: 0;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  &--active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: $color_white;
+    margin-left: 0;
+    top: 5.875rem;
+    left: 0;
+    z-index: 10;
+    transition: .3s;
+
+    @include breakpoint(_992) {
+      height: 100%;
+      opacity: 1;
+      transform: scale(1);
     }
   }
 }
@@ -68,5 +113,46 @@
 
   &--email {
     background-image: url('@img/icons/Chat.svg');
+  }
+}
+
+.burger {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  display: none;
+
+  &__line,
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $color_primary;
+    transition: .3s;
+  }
+
+  &--active {
+
+    .burger__line {
+      transform: scale(0);
+    }
+
+    &::before {
+      transform: translateY(10px) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+
+  @include breakpoint(_992) {
+    display: flex;
   }
 }

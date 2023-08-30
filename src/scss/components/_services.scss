@@ -9,15 +9,31 @@
   top: -90px;
   z-index: 1;
 
+  @include breakpoint(_768) {
+    padding-bottom: 50px;
+  }
+
+  @include breakpoint(_576) {
+    padding-top: 150px;
+  }
+
   &__container {
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 3.125rem;
+
+    @include breakpoint(_768) {
+      column-gap: 3.125rem;
+      justify-content: center;
+    }
   }
 
   &__box {
     position: relative;
-    width: 285px;
+    max-width: 285px;
+    width: 100%;
     min-height: 285px;
     background-color: $color_white;
     display: flex;

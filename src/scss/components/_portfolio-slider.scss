@@ -14,6 +14,10 @@
     overflow: hidden;
     max-height: 26.25rem;
 
+    @include breakpoint(_768) {
+      max-height: 100%;
+    }
+
     &:hover .portfolio-slider__body {
       transform: translateY(-4.3125rem);
     }
@@ -71,6 +75,10 @@
     top: -4.6875rem;
     right: 0;
 
+    @include breakpoint(_768) {
+      top: 50%;
+    }
+
     &::after {
       content: '';
       display: block;
@@ -97,6 +105,11 @@
     transition: 0.3s;
     top: -4.6875rem;
     left: 90%;
+
+    @include breakpoint(_768) {
+      top: 50%;
+      left: 0;
+    }
 
     &::after {
       content: '';

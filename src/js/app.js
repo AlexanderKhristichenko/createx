@@ -1,3 +1,4 @@
+import { navigation } from "./modules/navigation.js";
 import {
   heroSlider,
   portfolioSlider,
@@ -6,6 +7,7 @@ import {
 import { webp } from "./modules/webp.js";
 
 webp();
+navigation();
 heroSlider();
 portfolioSlider();
 testimonialsSlider();
