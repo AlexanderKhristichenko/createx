@@ -3,6 +3,10 @@
 @import "components/btn";
 @import "components/learn-more";
 
+.menu-active {
+  overflow: hidden;
+}
+
 .container {
   max-width: $container;
   width: 100%;

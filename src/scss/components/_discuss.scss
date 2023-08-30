@@ -2,6 +2,9 @@
   margin-top: 7.5rem;
   padding: 5rem 0;
   background-image: url('@img/bg/discuss-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 
   &__container {
     display: flex;

@@ -35,8 +35,20 @@
     }
   }
 
+  @else if $point ==_1260 {
+    @media (max-width: 78.75em) {
+      @content;
+    }
+  }
+
   @else if $point ==_1200 {
     @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @else if $point ==_1040 {
+    @media (max-width: 65em) {
       @content;
     }
   }

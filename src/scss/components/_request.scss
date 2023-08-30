@@ -1,6 +1,10 @@
 .request {
   padding-top: 5.25rem;
 
+  @include breakpoint(_576) {
+    padding-top: 50px;
+  }
+
 
   &__container {
     position: relative;
@@ -24,13 +28,27 @@
     align-items: flex-end;
     padding-left: 2.8125rem;
     padding-right: 2.8125rem;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+
+    @include breakpoint(_1200) {
+      justify-content: center;
+      gap: 1.875rem;
+    }
   }
 
   &__input-box {
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     row-gap: .5rem;
+
+    @include breakpoint(_1200) {
+      flex: 0 1 auto;
+    }
+
+    @include breakpoint(_768) {
+      flex: 1 1 100%;
+    }
   }
 
   &__label {
@@ -49,8 +67,14 @@
     font-size: .875rem;
     width: 16.25rem;
 
+
+
     &--long {
       width: 25.875rem;
+    }
+
+    @include breakpoint(_768) {
+      width: 100%;
     }
   }
 

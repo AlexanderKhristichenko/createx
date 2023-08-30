@@ -2,10 +2,21 @@
   padding-top: 5.625rem;
   padding-bottom: 5.25rem;
 
+  @include breakpoint(_576) {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
   &__container {
     margin-top: 3.75rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 3.125rem;
+
+    @include breakpoint(_768) {
+      justify-content: center;
+    }
   }
 
   &__content {
@@ -33,5 +44,9 @@
     width: 1px;
     min-height: 11.75rem;
     background: linear-gradient(315deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+
+    @include breakpoint(_768) {
+      display: none;
+    }
   }
 }

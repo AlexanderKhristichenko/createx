@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   padding-bottom: 6.8125rem;
 
+  @include breakpoint(_576) {
+    height: 100vh;
+  }
+
   &__slider {
     width: 100%;
     height: 100%;
@@ -18,10 +22,23 @@
 
   &__container {
     max-width: 36.0625rem;
+
+    @include breakpoint(_1400) {
+      padding-left: 70px;
+      padding-right: 70px;
+      max-width: 577px + 140px;
+    }
+
+    @include breakpoint(_576) {
+      max-width: 100% !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
   }
 
   &__title {
-    font-size: 4.5rem;
+    font-size: 50px;
     font-weight: 700;
     line-height: 130%;
     letter-spacing: .0625rem;
@@ -32,10 +49,14 @@
     span {
       color: $color_primary;
     }
+
+    @include breakpoint(_576) {
+      font-size: 35px;
+    }
   }
 
   &__txt {
-    font-size: 1.25rem;
+    font-size: 16px;
     font-weight: 400;
     line-height: 150%;
     color: $color_white;
@@ -47,10 +68,16 @@
     align-items: center;
     column-gap: 1.375rem;
     margin-top: 3.8125rem;
+    flex-wrap: wrap;
+    row-gap: 30px;
   }
 
   &__pagination-container {
     position: relative;
+
+    @include breakpoint(_768) {
+      display: none;
+    }
   }
 
   &__pagination {
@@ -66,6 +93,10 @@
     background-color: $color_white;
     top: 56%;
     right: 1.2%;
+
+    @include breakpoint(_576) {
+      display: none;
+    }
 
     &::after {
       content: '';
@@ -84,6 +115,10 @@
     background-color: $color_white;
     top: 56%;
     left: 1.3%;
+
+    @include breakpoint(_576) {
+      display: none;
+    }
 
     &::after {
       content: '';
