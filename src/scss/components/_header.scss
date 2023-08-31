@@ -3,6 +3,11 @@
   background-color: $color_white;
   padding-top: 1.4375rem;
   padding-bottom: 1.3125rem;
+  z-index: 2;
+
+  &--transparent {
+    background-color: transparent;
+  }
 
   &__container {
     display: flex;
@@ -45,6 +50,10 @@
     line-height: 160%;
     color: $color_gray-800;
     transition: color 0.3s;
+
+    &--current {
+      color: $color_primary;
+    }
 
     &:hover {
       color: $color_primary;

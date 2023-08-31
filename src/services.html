@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Createx - Construction' })
+  <body class="page-body">
+    <!-- * Header * -->
+    @@include('html/header.html', {transparent: 'header--transparent',
+    servicesCurrent: 'nav__link--current'})
+    <!-- * Main * -->
+    <main>
+      <!-- * Hero * -->
+      <section class="hero hero__page hero--services" id="hero">
+        <div class="container">
+          <div class="hero__container hero__container--page">
+            <div class="hero__breadcrumbs">
+              <a href="index.html" class="hero__breadcrumbs--black">Homepage</a>
+              / <span>Services</span>
+            </div>
+            <h2 class="hero__title hero__title--black">SERVICES</h2>
+            <p class="hero__txt hero__txt--gray">
+              If you are looking for a full-service construction company, look
+              to Createx Construction Bureau. We are doing our best
+              to be a partner for all of your construction needs.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- * Discuss * -->
+      @@include('html/discuss.html',{})
+    </main>
+    <!-- * Footer * -->
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

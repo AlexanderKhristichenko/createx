@@ -3,6 +3,10 @@
 @import "components/btn";
 @import "components/learn-more";
 
+.page-body {
+  position: relative;
+}
+
 .menu-active {
   overflow: hidden;
 }
