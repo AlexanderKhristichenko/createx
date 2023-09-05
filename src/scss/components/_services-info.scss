@@ -1,0 +1,53 @@
+.services-info {
+  background: url('@img/bg/services-info-center-bg.png') right center no-repeat, url('@img/bg/services-info-bottom-bg.png') left bottom no-repeat;
+
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+  }
+
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: center;
+
+    &:nth-child(2n + 2) .services-info__img {
+      order: 2;
+    }
+  }
+
+  &__img {
+    height: auto;
+    flex: 1 1 300px;
+  }
+
+  &__content {
+    flex: 1 1 300px;
+  }
+
+  &__title {
+    font-size: 32px;
+  }
+
+  &__txt {
+    margin-top: 24px;
+    color: $color_gray-700;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  &__btn {
+    margin-top: 48px;
+    color: $color_primary;
+    background-color: transparent;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &:hover {
+      color: $color_white;
+      background-color: $color_primary;
+    }
+  }
+}
