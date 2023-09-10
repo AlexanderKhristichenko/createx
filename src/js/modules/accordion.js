@@ -5,10 +5,6 @@ export const accordion = () => {
     const accordionHeader = item.querySelector(".accordion__header");
     const accordionDescription = item.querySelector(".accordion__description");
 
-    if (item.classList.contains("accordion__content--open")) {
-      accordionDescription.style.height = `${accordionDescription.scrollHeight}px`;
-    }
-
     accordionHeader.addEventListener("click", () => {
       item.classList.toggle("accordion__content--open");
 
