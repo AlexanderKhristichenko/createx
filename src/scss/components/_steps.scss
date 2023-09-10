@@ -1,0 +1,67 @@
+.steps {
+  padding-bottom: 120px;
+
+  &__container {
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    flex: 1 1 285px;
+
+    &:hover .steps__num {
+      color: $color_primary;
+      box-shadow: 0 0 10px 20px rgba(255, 90, 48, .2);
+      background-color: rgba(255, 90, 48, .4);
+    }
+
+    &:hover {
+      .steps__divider {
+        border-color: rgba(255, 90, 48, .2);
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    column-gap: 23px;
+    align-items: center;
+  }
+
+  &__num {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 130%;
+    color: $color_gray-400;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin-left: -15px;
+    transition: all .3s linear;
+  }
+
+  &__divider {
+    width: 100%;
+    border-bottom: 2px dashed $color_gray-400;
+    transition: all .3s linear;
+  }
+
+  &__body {
+    margin-top: 16px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    color: $color_gray-900;
+  }
+
+  &__txt {
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 8px;
+    color: $color_gray-700;
+  }
+}
