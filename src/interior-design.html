@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Createx - Construction' })
+  <body class="page-body">
+    <!-- * Header * -->
+    @@include('html/header.html', {transparent: 'header--transparent',
+    servicesCurrent: 'nav__link--current'})
+    <!-- * Main * -->
+    <main>
+      <!-- * Hero * -->
+      <section class="hero hero__page hero--interior-design" id="hero">
+        <div class="container">
+          <div class="hero__container hero__container--page">
+            <div class="hero__breadcrumbs">
+              <a href="index.html" class="hero__breadcrumbs--black">Homepage</a>
+              /
+              <a href="services.html" class="hero__breadcrumbs--black"
+                >Services</a
+              >
+              /
+              <span>Interior Design</span>
+            </div>
+            <h2 class="hero__title hero__title--black">Interior Design</h2>
+            <p class="hero__txt hero__txt--gray hero__txt--black">
+              Dui augue nec mi mi. Ut ac lectus donec fames pellentesque.
+              Laoreet aenean vulputate elementum blandit amet.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- * Offer * -->
+      @@include('html/offer.html',{})
+      <!-- * Portfolio slider * -->
+      @@include('html/portfolio-slider.html', {'title': 'Related projects'})
+      <!-- * Partners * -->
+      @@include('html/partners.html',{})
+      <!-- * Discuss * -->
+      @@include('html/discuss.html',{})
+    </main>
+    <!-- * Footer * -->
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

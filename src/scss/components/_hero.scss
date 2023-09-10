@@ -44,6 +44,13 @@
     background-color: $color_gray-200;
   }
 
+  &--interior-design {
+    background-image: url('@img/bg/interior-design-hero-bg.png');
+    background-size: auto;
+    background-position: right;
+    background-color: $color_gray-200;
+  }
+
   &__slider {
     width: 100%;
     height: 100%;
