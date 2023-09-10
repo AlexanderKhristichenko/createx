@@ -20,6 +20,11 @@
     &--black {
       color: $color_gray-800;
       font-size: 14px;
+      transition: .3s linear;
+
+      &:hover {
+        color: $color_primary;
+      }
     }
   }
 

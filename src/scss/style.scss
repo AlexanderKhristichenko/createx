@@ -30,10 +30,21 @@
   }
 }
 
+.interior-design__wrapper {
+  padding-bottom: 92px;
+  background: $color_gray-200 url('@img/bg/interior-design-wrapper-bg.png') left top no-repeat
+}
+
+#discuss {
+  margin-top: 0;
+}
+
 @import "components/header";
 @import "components/hero";
 @import "components/offer";
 @import "components/steps";
+@import "components/benefits";
+@import "components/pricing";
 @import "components/video";
 @import "components/values";
 @import "components/request";
