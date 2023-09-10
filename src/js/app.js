@@ -1,3 +1,4 @@
+import { accordion } from "./modules/accordion.js";
 import { navigation } from "./modules/navigation.js";
 import {
   heroSlider,
@@ -11,3 +12,4 @@ navigation();
 heroSlider();
 portfolioSlider();
 testimonialsSlider();
+accordion();
