@@ -13,6 +13,10 @@
     row-gap: 50px;
   }
 
+  &__img {
+    flex: 1;
+  }
+
   picture {
     flex: 1 1 320px;
   }

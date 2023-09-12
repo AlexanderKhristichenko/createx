@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Createx - Construction' })
+  <body class="page-body">
+    <!-- * Header * -->
+    @@include('html/header.html', {transparent: 'header--transparent',
+    workCurrent: 'nav__link--current'})
+    <!-- * Main * -->
+    <main>
+      <!-- * Hero * -->
+      <section class="hero hero__page hero--portfolio" id="hero">
+        <div class="container">
+          <div class="hero__container hero__container--page">
+            <div class="hero__breadcrumbs">
+              <a href="index.html" class="hero__breadcrumbs--black">Homepage</a>
+              /
+              <span>Work</span>
+            </div>
+            <h2 class="hero__title hero__title--black">our work</h2>
+            <p class="hero__txt hero__txt--gray hero__txt--black">
+              Our portfolio represents 20 years of construction experience
+              backed by a passion for perfect client service, quality and
+              innovations in consctuction industry.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- * Tabs * -->
+      @@include('html/cards.html',{})
+      <div class="wrapper wrapper--gray">
+        <!-- * Testimonials * -->
+        @@include('html/testimonials.html',{})
+      </div>
+      <!-- * Partners * -->
+      @@include('html/partners.html',{})
+      <!-- * Discuss * -->
+      @@include('html/discuss.html',{})
+    </main>
+    <!-- * Footer * -->
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

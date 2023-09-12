@@ -35,10 +35,6 @@
   background: $color_gray-200 url('@img/bg/interior-design-wrapper-bg.png') left top no-repeat
 }
 
-#discuss {
-  margin-top: 0;
-}
-
 @import "components/header";
 @import "components/hero";
 @import "components/offer";
@@ -49,6 +45,7 @@
 @import "components/values";
 @import "components/request";
 @import "components/services";
+@import "components/cards";
 @import "components/portfolio-slider";
 @import "components/partners";
 @import "components/testimonials";
@@ -57,3 +54,7 @@
 @import "components/services-info";
 @import "components/discuss";
 @import "components/footer";
+
+.mt-0 {
+  margin-top: 0;
+}

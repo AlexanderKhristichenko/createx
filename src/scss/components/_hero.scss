@@ -56,6 +56,17 @@
     background-color: $color_gray-200;
   }
 
+  &--portfolio {
+    background-image: url('@img/bg/portfolio-hero-bg.png');
+    background-size: auto;
+    background-position: right;
+    background-color: $color_gray-200;
+
+    @include breakpoint(_992) {
+      background-image: linear-gradient($color_gray-200, $color_gray-400) !important;
+    }
+  }
+
   &__slider {
     width: 100%;
     height: 100%;
