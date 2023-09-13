@@ -2,6 +2,7 @@ import { accordion } from "./modules/accordion.js";
 import { navigation } from "./modules/navigation.js";
 import {
   heroSlider,
+  heroSlider2,
   portfolioSlider,
   testimonialsSlider,
 } from "./modules/slider.js";
@@ -13,3 +14,4 @@ heroSlider();
 portfolioSlider();
 testimonialsSlider();
 accordion();
+heroSlider2();

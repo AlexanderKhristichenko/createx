@@ -1,0 +1,117 @@
+.hero-slider {
+  padding-bottom: 120px;
+
+  @include breakpoint(_576) {
+    padding-bottom: 50px;
+  }
+
+  &__breadcrumbs {
+    margin-top: 80px;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1px;
+  }
+
+  &__container {
+    margin-top: 60px;
+  }
+
+  &__thumb {
+    margin-top: 20px;
+  }
+
+  &__slide {
+    cursor: pointer;
+    flex: 0 1 100px;
+    opacity: 0.6;
+  }
+
+  &__content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include breakpoint(_1200) {
+      justify-content: center;
+    }
+
+    @include breakpoint(_576) {
+      margin-top: 50px;
+    }
+  }
+
+  &__project {
+    flex: 1 1 600px;
+  }
+
+  &__txt {
+    color: $color_gray-800;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 20px;
+  }
+
+  &__info {
+    padding: 40px;
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+    background-color: $color_white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    flex: 1 1 495px;
+    flex-wrap: wrap;
+
+    @include breakpoint(_576) {
+      padding: 20px;
+    }
+
+    &-box {
+      display: flex;
+      justify-content: space-between;
+
+      @include breakpoint(_576) {
+        flex-direction: column;
+      }
+
+      &-title {
+        font-weight: 700;
+        line-height: 160%;
+        color: $color_gray-900;
+      }
+
+      &-txt {
+        font-weight: 400;
+        line-height: 160%;
+        color: $color_gray-700;
+      }
+    }
+  }
+}
+
+.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $color_gray-400;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 50%;
+  transition: all .3s linear;
+
+  &:hover {
+    color: $color_white;
+    background-color: $color_primary;
+  }
+}
