@@ -1,0 +1,53 @@
+.constructive {
+  padding: 80px 0;
+  background-color: $color_gray-200;
+  margin-bottom: 180px;
+
+  @include breakpoint(_1200) {
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+
+    @include breakpoint(_1200) {
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    flex: 0 1 465px;
+    max-width: 465px;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+
+    @include breakpoint(_1200) {
+      position: static;
+    }
+  }
+
+  &__list {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__item {
+    font-weight: 400;
+    line-height: 160%;
+    color: $color_gray-800;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  &__icon {
+    width: 19px;
+  }
+}

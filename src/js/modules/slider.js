@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Thumbs } from "swiper/modules";
 
 export const heroSlider = () => {
   const swiper = new Swiper(".hero__slider", {
@@ -40,6 +40,28 @@ export const testimonialsSlider = () => {
     navigation: {
       nextEl: ".testimonials__btn-next",
       prevEl: ".testimonials__btn-prev",
+    },
+  });
+};
+
+export const heroSlider2 = () => {
+  const swiper = new Swiper(".hero-slider1", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 6,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  const swiper2 = new Swiper(".hero-slider2", {
+    modules: [Navigation, Thumbs],
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
     },
   });
 };
