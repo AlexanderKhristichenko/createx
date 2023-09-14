@@ -3,6 +3,7 @@ import { navigation } from "./modules/navigation.js";
 import {
   heroSlider,
   heroSlider2,
+  historySlider,
   portfolioSlider,
   testimonialsSlider,
 } from "./modules/slider.js";
@@ -15,3 +16,4 @@ portfolioSlider();
 testimonialsSlider();
 accordion();
 heroSlider2();
+historySlider();
