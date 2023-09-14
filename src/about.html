@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Createx - Construction' })
+  <body>
+    <!-- * Header * -->
+    @@include('html/header.html', {transparent: 'header--transparent',
+    aboutCurrent: 'nav__link--current'})
+    <!-- * Main * -->
+    <main>
+      <!-- * Hero * -->
+      <section class="hero hero__page hero--about" id="hero">
+        <div class="container">
+          <div class="hero__container hero__container--page">
+            <div class="hero__breadcrumbs">
+              <a href="index.html" class="hero__breadcrumbs--black">Homepage</a>
+              /
+              <span>About Us</span>
+            </div>
+            <h2 class="hero__title hero__title--black">About Us</h2>
+            <p class="hero__txt hero__txt--gray hero__txt--black">
+              Createx Construction Bureau has been successfully operating in the
+              USA construction market since 2000. We are proud to offer you
+              quality construction and exemplary service.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- * Statistics * -->
+      @@include('html/statistics.html', {})
+      <div class="wrapper wrapper--gray">
+        <!-- * Values * -->
+        @@include('html/values.html', {})
+      </div>
+      <!-- * Partners * -->
+      @@include('html/partners.html',{})
+      <!-- * Discuss * -->
+      @@include('html/discuss.html',{})
+    </main>
+    <!-- * Footer * -->
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
