@@ -1,0 +1,42 @@
+.statistics {
+  padding-bottom: 120px;
+
+  @include breakpoint(_768) {
+    padding-bottom: 50px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &__item {
+    flex: 1 1 250px;
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+  }
+
+  &__title {
+    color: $color_primary;
+    font-weight: 700;
+    line-height: 130%;
+    font-size: 46px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__txt {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: $color_gray-900;
+    text-align: center;
+    margin-top: 8px;
+  }
+}

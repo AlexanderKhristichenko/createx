@@ -56,6 +56,13 @@
     background-color: $color_gray-200;
   }
 
+  &--about {
+    background-image: url('@img/bg/about-us-bg.png');
+    background-size: auto;
+    background-position: right;
+    background-color: $color_gray-200;
+  }
+
   &--portfolio {
     background-image: url('@img/bg/portfolio-hero-bg.png');
     background-size: auto;
