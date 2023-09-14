@@ -1,9 +1,7 @@
 .statistics {
-  padding-top: 120px;
   padding-bottom: 120px;
 
   @include breakpoint(_768) {
-    padding-top: 0px;
     padding-bottom: 50px;
   }
 
