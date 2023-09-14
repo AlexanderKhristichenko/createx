@@ -65,3 +65,35 @@ export const heroSlider2 = () => {
     },
   });
 };
+
+export const historySlider = () => {
+  const swiper = new Swiper(".history__slider", {
+    modules: [Pagination],
+    pagination: {
+      el: ".history__pagination",
+      clickable: true,
+    },
+    loop: true,
+  });
+
+  const paginationItems = document.querySelectorAll(
+    ".swiper-pagination-bullet",
+  );
+  const historyTimeline = document.querySelectorAll(".history__timeline-item");
+
+  paginationItems.forEach((item, ind) => {
+    if (item.classList.contains("swiper-pagination-bullet-active")) {
+      historyTimeline[ind].classList.add("history__timeline-item--active");
+    }
+
+    historyTimeline[ind].addEventListener("click", () => {
+      historyTimeline.forEach((item2) => {
+        item2.classList.remove("history__timeline-item--active");
+      });
+      item.click();
+      if (item.classList.contains("swiper-pagination-bullet-active")) {
+        historyTimeline[ind].classList.add("history__timeline-item--active");
+      }
+    });
+  });
+};
