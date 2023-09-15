@@ -37,6 +37,10 @@
     width: 100%;
     padding-bottom: 0;
 
+    &--gradient {
+      background: linear-gradient(90deg, #F4F5F6 0%, rgba(244, 245, 246, 0.86) 11.48%, rgba(244, 245, 246, 0.00) 41.15%);
+    }
+
     @include breakpoint(_576) {
       height: auto;
     }
@@ -67,6 +71,14 @@
     background-image: url('@img/bg/positions-hero-bg.png');
     background-size: auto;
     background-position: right;
+    background-color: $color_gray-200;
+  }
+
+  &--news {
+    background-image: url('@img/bg/news-hero-bg.png');
+    background-size: auto;
+    background-position: right;
+    background-repeat: no-repeat;
     background-color: $color_gray-200;
   }
 

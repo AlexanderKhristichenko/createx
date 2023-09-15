@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Createx - Construction' })
+  <body>
+    <!-- * Header * -->
+    @@include('html/header.html', {transparent: 'header--transparent',
+    newsCurrent: 'nav__link--current'})
+    <!-- * Main * -->
+    <main>
+      <!-- * Hero * -->
+      <section
+        class="hero hero__page hero__page--gradient hero--news"
+        id="hero">
+        <div class="container">
+          <div class="hero__container hero__container--page">
+            <div class="hero__breadcrumbs">
+              <a href="index.html" class="hero__breadcrumbs--black">Homepage</a>
+              /
+              <span>News</span>
+            </div>
+            <h2 class="hero__title hero__title--black">News</h2>
+            <p class="hero__txt hero__txt--gray hero__txt--black">
+              Stay tuned with our news, expert tips and articles.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- * News * -->
+      @@include('html/news.html',{})
+      <!-- * Discuss * -->
+      @@include('html/discuss.html',{})
+    </main>
+    <!-- * Footer * -->
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
