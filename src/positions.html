@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Createx - Construction' })
+  <body class="body-page">
+    <!-- * Header * -->
+    @@include('html/header.html', {transparent: 'header--transparent',
+    aboutCurrent: 'nav__link--current'})
+    <!-- * Main * -->
+    <main>
+      <!-- * Hero * -->
+      <section class="hero hero__page hero--positions" id="hero">
+        <div class="container">
+          <div class="hero__container hero__container--page">
+            <div class="hero__breadcrumbs">
+              <a href="index.html" class="hero__breadcrumbs--black">Homepage</a>
+              /
+              <a href="about.html" class="hero__breadcrumbs--black">About Us</a>
+              /
+              <span>Available Positions</span>
+            </div>
+            <h2 class="hero__title hero__title--black">AVAILABLE POSITIONS</h2>
+            <p class="hero__txt hero__txt--gray hero__txt--black">
+              Build your career with Createx Construction Bureau.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- * Positions * -->
+      @@include('html/positions.html',{})
+      <!-- * Position Benefits * -->
+      @@include('html/positions-benefits.html',{})
+      <!-- * Discuss * -->
+      @@include('html/discuss.html',{})
+    </main>
+    <!-- * Footer * -->
+    @@include('html/footer.html', {})
+    <!-- * Popup * -->
+    @@include('html/popup.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

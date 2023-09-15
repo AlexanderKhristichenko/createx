@@ -1,0 +1,108 @@
+.positions {
+  padding-bottom: 80px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    column-gap: 135px;
+    position: relative;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  &__card-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    flex: 0 1 625px;
+  }
+
+  &__card-item {
+    padding: 32px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    row-gap: 30px;
+    border: 1px solid $color_gray-400;
+    border-radius: 4px;
+  }
+
+  &__meta {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    &-info {
+      color: $color_gray-700;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-divider {
+      width: 1px;
+      height: 12px;
+      background-color: $color_gray-700;
+    }
+  }
+
+  &__card-title {
+    margin-top: 10px;
+    color: $color_gray-900;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__card-btn {
+    border-color: $color_primary;
+    color: $color_primary;
+
+    &:hover {
+      color: $color_white;
+    }
+  }
+
+  &__cta {
+    flex: 0 1 380px;
+    position: sticky;
+    top: 20px;
+    height: 100%;
+
+    &-title {
+      color: $color_gray-900;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 150%;
+    }
+
+    &-txt {
+      color: $color_gray-800;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 150%;
+      margin-top: 24px;
+    }
+  }
+
+  &__btn-group {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__subscribe-btn {
+    border-color: $color_primary;
+    color: $color_primary;
+
+    &:hover {
+      color: $color_white;
+    }
+  }
+}

@@ -3,6 +3,12 @@
 @import "components/btn";
 @import "components/learn-more";
 
+.body-page {
+  &--active {
+    overflow: hidden;
+  }
+}
+
 .page-body {
   position: relative;
 }
@@ -51,6 +57,8 @@
 @import "components/map";
 @import "components/ceo";
 @import "components/history";
+@import "components/positions-benefits";
+@import "components/positions";
 @import "components/team";
 @import "components/cards";
 @import "components/portfolio-slider";
@@ -61,6 +69,7 @@
 @import "components/services-info";
 @import "components/discuss";
 @import "components/footer";
+@import "components/popup";
 
 .mt-0 {
   margin-top: 0;
