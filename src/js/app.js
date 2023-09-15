@@ -1,5 +1,6 @@
 import { accordion } from "./modules/accordion.js";
 import { navigation } from "./modules/navigation.js";
+import { popup } from "./modules/popup.js";
 import {
   heroSlider,
   heroSlider2,
@@ -17,3 +18,4 @@ testimonialsSlider();
 accordion();
 heroSlider2();
 historySlider();
+popup();
