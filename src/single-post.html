@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Createx - Construction' })
+  <body>
+    <!-- * Header * -->
+    @@include('html/header.html', {transparent: 'header--transparent',
+    newsCurrent: 'nav__link--current'})
+    <!-- * Main * -->
+    <main>
+      <!-- * Hero * -->
+      <section class="hero hero__page hero--about" id="hero">
+        <div class="container">
+          <div class="hero__container hero__container--page">
+            <div class="hero__breadcrumbs">
+              <a href="index.html" class="hero__breadcrumbs--black">Homepage</a>
+              /
+              <a href="news.html" class="hero__breadcrumbs--black">News</a>
+              /
+              <span>How to Build Climate Change-Resilient Infrastructure</span>
+            </div>
+            <h2 class="hero__title hero__title--black">
+              How to Build Climate Change-Resilient Infrastructure
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!-- * Discuss * -->
+      @@include('html/discuss.html',{})
+    </main>
+    <!-- * Footer * -->
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
