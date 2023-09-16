@@ -1,0 +1,187 @@
+.post {
+  position: relative;
+  top: -200px;
+
+  &__container {
+    max-width: 810px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+
+    @include breakpoint(_768) {
+      margin-top: 50px;
+    }
+  }
+
+  &__bold-txt {
+    color: $color_gray-900;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__txt {
+    color: $color_gray-800;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 24px;
+  }
+
+  &__quote {
+    color: $color_gray-900;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    display: flex;
+    gap: 30px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+
+    &-icon {
+      width: 28px;
+      height: 20px;
+    }
+  }
+
+  &__list {
+    margin-top: 24px;
+  }
+
+  &__item {
+    color: $color_gray-800;
+    font-weight: 400;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__social-box {
+    margin-top: 60px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &__social-txt {
+    font-weight: 700;
+    line-height: 160%;
+    color: $color_gray-900;
+  }
+
+  &__comments {
+    margin-top: 80px;
+
+    &-list {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    &-item {
+      display: flex;
+      gap: 30px;
+
+      @include breakpoint(_576) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__user-info {
+    flex: 0 1 150px;
+  }
+
+  &__user-name {
+    color: $color_gray-900;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__user-date {
+    color: $color_gray-700;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 8px;
+  }
+
+  &__user-comment-box {
+    flex: 0 1 630px;
+  }
+
+  &__user-comment {
+    color: $color_gray-800;
+    font-weight: 400;
+    line-height: 160%;
+
+    span {
+      color: $color_primary;
+    }
+  }
+
+  &__comment-replay {
+    display: flex;
+    gap: 8px;
+    background-color: transparent;
+    border: 0;
+    margin-top: 16px;
+  }
+
+  &__comments-form-container {
+    margin-top: 120px;
+
+    @include breakpoint(_768) {
+      margin-top: 50px;
+    }
+  }
+
+  &__form {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 46px;
+    row-gap: 22px;
+  }
+
+  &__form-input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 1 47%;
+  }
+
+  &__form-textarea-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 1 100%;
+  }
+
+  &__label {
+    color: $color_gray-800;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  &__input {
+    color: $color_gray-600;
+    font-weight: 400;
+    line-height: 160%;
+    padding: 13px 16px;
+    border: 1px solid $color_gray-400;
+    border-radius: 4px;
+    width: 100%;
+    resize: none;
+    background-color: $color_gray-200;
+  }
+
+  &__form-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+  }
+}
