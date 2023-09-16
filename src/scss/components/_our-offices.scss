@@ -1,0 +1,70 @@
+.our-offices {
+  margin-top: 80px;
+  padding: 80px 0;
+  background-color: $color_gray-200;
+
+  @include breakpoint(_992) {
+    margin-top: 50px;
+  }
+
+  &__container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @include breakpoint(_992) {
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    flex: 0 1 250px;
+  }
+
+  &__title {
+    color: $color_gray-900;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__address {
+    margin-top: 24px;
+    font-weight: 400;
+    line-height: 160%;
+    color: $color_gray-900;
+  }
+
+  &__map {
+    font-weight: 400;
+    line-height: 160%;
+    color: $color_primary;
+  }
+
+  &__info-box {
+    margin-top: 20px;
+  }
+
+  &__info {
+    font-weight: 400;
+    line-height: 160%;
+    color: $color_gray-700;
+
+    span {
+      color: $color_gray-900;
+    }
+
+    &-link {
+      font-weight: 400;
+      line-height: 160%;
+      color: $color_gray-900;
+      transition: .3s linear;
+
+      &:hover {
+        color: $color_primary;
+      }
+    }
+  }
+}

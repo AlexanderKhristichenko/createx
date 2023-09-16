@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Createx - Construction' })
+  <body>
+    <!-- * Header * -->
+    @@include('html/header.html', {transparent: 'header--transparent',
+    contactsCurrent: 'nav__link--current'})
+    <!-- * Main * -->
+    <main>
+      <!-- * Hero * -->
+      <section class="hero hero__page hero--contacts" id="hero">
+        <div class="container">
+          <div class="hero__container hero__container--page">
+            <div class="hero__breadcrumbs">
+              <a href="index.html" class="hero__breadcrumbs--black">Homepage</a>
+              /
+              <span>Contacts</span>
+            </div>
+            <h2 class="hero__title hero__title--black">CONTACTS</h2>
+            <p class="hero__txt hero__txt--gray hero__txt--black">
+              Contact us for all your construction needs. We always welcome any
+              questions and comments.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- * Contact Us * -->
+      @@include('html/contact-us.html', {})
+      <!-- * Our offices * -->
+      @@include('html/our-offices.html', {})
+    </main>
+    <!-- * Footer * -->
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
