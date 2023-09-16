@@ -1,5 +1,6 @@
 {
-  "name": "yarn-gulp",
+  "name": "Createx",
+  "homepage": "https://alexanderkhristichenko.github.io/createx/",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "author": "Olexander Khrystychenko",
@@ -36,6 +37,8 @@
     "webpack-stream": "^7.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "gulp",
     "build": "gulp build --build"
   }

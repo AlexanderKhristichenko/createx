@@ -62,6 +62,15 @@
 
   &--about {
     background-image: url('@img/bg/about-us-bg.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right;
+    background-color: $color_gray-200;
+  }
+
+  &--contacts {
+    background-image: url('@img/bg/contacts-bg.png');
+    background-repeat: no-repeat;
     background-size: auto;
     background-position: right;
     background-color: $color_gray-200;
