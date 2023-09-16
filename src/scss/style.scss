@@ -43,11 +43,11 @@
 
 @import "components/header";
 @import "components/hero";
+@import "components/post";
 @import "components/offer";
 @import "components/steps";
 @import "components/benefits";
 @import "components/pricing";
-@import "components/single-post";
 @import "components/video";
 @import "components/values";
 @import "components/request";
@@ -75,4 +75,8 @@
 
 .mt-0 {
   margin-top: 0;
+}
+
+.mt--100 {
+  margin-top: -100px;
 }
